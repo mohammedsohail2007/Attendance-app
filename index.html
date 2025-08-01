@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>II IT Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Attendance</h1>
+    <h3 id="section">IT</h3>
+
+    <div class="select-subject">
+        <label for="Section_Batch"><b>Select Section / Batch :</b></label>
+        <select id="Section_Batch">
+            <option value="IT">IT</option>
+            <option value="IT-A">IT-A</option>
+            <option value="IT-B">IT-B</option>
+            <option value="IT-C">IT-C</option>
+        </select>
+    </div>
+
+    <div class="select-subject">
+        <label for="subject"><b>Select Class :</b></label>
+        <select id="subject">
+            <option value="" disabled selected>Select a subject</option>
+            <option value="Mathematical foundation of computer science">MFCS</option>
+            <option value="Data Structures">DS</option>
+            <option value="Probability & Statistics">P&S</option>
+            <option value="Computer Science Architecture">CSA</option>
+            <option value="Database Management system">DBMS</option>
+            <option value="Professional communication">PC</option>
+            <option value="Data stuctures Lab">DS Lab</option>
+            <option value="Database Management system Lab">DBMS Lab</option>
+            <option value="R-Programming">R-PGM lab</option>
+            <option value="Placement Training">PT</option>
+            <option value="Placement Assessments">PA</option>
+            <option value="Projects">Projects</option>
+            <option value="other">Others</option>
+        </select>
+    </div>
+
+    <div id="popup" style="display: none;">
+        <label for="otherText">If Others : </label>
+        <input type="text" id="otherText" placeholder="Please Specify">
+    </div>
+
+    <div class="togg">
+        <input type="checkbox" class="switch" id="switch">
+        <label for="switch"></label>
+    </div>
+
+    <div class="data" id="data"></div>
+
+    <div class="features">
+        <div class="container">
+            <label>Generate with Names:</label>
+            <label class="toggle-names-switch">
+                <input class="toggle-names-switch-button" type="checkbox" />
+                <div></div>
+            </label>
+        </div>
+
+        <div class="top">
+            <label for="display">Details : </label>
+            <textarea id="display" readonly rows="17" cols="40"></textarea>
+            <div id="copy" class="copy">
+                <img src="https://img.icons8.com/material-outlined/48/null/copy.png" alt="" width="15px" />
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="reset">Reset</button>
+            <button class="Whatsapp">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" width="30px" alt="" />WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <div class="developer-credit">
+        Designed and developed by <span class="developer-name">Ruthvik Katta</span> and edited by <span class="developer-name">Mohammed Sohail</span>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
